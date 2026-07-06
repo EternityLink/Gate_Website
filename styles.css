@@ -2,13 +2,14 @@
 
 h1 {
     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Garamond", serif;
+    font-size: 60px;
     font-weight: normal;
     color: white;
-    background-color: darkgreen;
+    background-color: rgb(43, 79, 43);
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin: 0;
 }
 
@@ -19,10 +20,12 @@ h2 {
 p {
     color: white;
     margin: 20px;
+    font-size: 20px;
 }
 
 h4 {
     color: white;
     padding-top: 10px;
     padding-left: 10px;
+    font-size: 20px;
 }
