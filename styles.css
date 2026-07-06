@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    color: white;
+    background-color: darkgreen;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0;
+}
