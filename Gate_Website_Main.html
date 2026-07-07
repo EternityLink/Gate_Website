@@ -21,9 +21,12 @@
         <img src="images/gate-logo.jpg" alt="Gate logo" title="Gate logo" style="display: block; margin-left: auto; margin-right: auto; width:192px; image-rendering: pixelated;">
         <!-- <h1>GATE</h1> -->
         </section>
-        <!--
-        1 or more pictures showing off the game
-        -->
+        
+        <br>
+
+        <img id="screenshots"src="images/placeholder-1.jpg" alt="Screenshot 1" title="Screenshot 1" style="display: block; margin-left: auto; margin-right: auto; width:70%">
+        <button type="button" onclick="LeftArrow()"> Left </button>
+        <button type="button" onclick="RightArrow()"> Right </button>
 
         <h2> GENERAL INFO </h2>
         <p>
@@ -66,6 +69,32 @@
         <p style="margin-left: 10px; margin-bottom: 10px;"> Bernt Lund Johnsen <br>
         <a href="mailto:bernt.johnsen@funkweb.org" style="color:lightskyblue;">bernt.johnsen@funkweb.org </a>  </p>
         </section>
+
+        <script>
+            let currentImage=1;
+            let imageAmount=3;
+
+            function LeftArrow() {
+                currentImage--;
+                if (currentImage < 1) {
+                    currentImage = imageAmount;
+                }
+                UpdateImage();
+            }
+            
+            function RightArrow() {
+                currentImage++;
+                if (currentImage > imageAmount) {
+                    currentImage = 1;
+                }
+                UpdateImage();
+            }
+
+            function UpdateImage() {
+                let imageElement = document.getElementById("screenshots");
+                imageElement.src = "images/placeholder-" + currentImage + ".jpg";
+            }
+        </script>
 
     </body>
 
