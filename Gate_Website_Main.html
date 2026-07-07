@@ -15,8 +15,9 @@
     <body style="background-color: rgb(53, 53, 53);">
 
         <div id="popover" popover style="width:100%; height:100%; background-color: rgba(0, 0, 0, 0.5);">
-            <img id="popover-image" style="max-width: 90%; max-height: 90%; display: block; margin-left: auto; margin-right: auto; margin-top: 2%;">
-            
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <img id="popover-image" style="max-width: 90%; max-height: 90%; cursor:default;">
+            </div>
         </div>
         
         <section style="background-color: rgb(170, 138, 93); width: 100%; padding-top: 25px; padding-bottom: 25px; margin: 0;">
@@ -99,13 +100,21 @@
 
 
             var imageClicked = document.getElementById("screenshots");
+
             imageClicked.onclick = function() {
                 document.getElementById("popover-image").src = imageClicked.src;
                 popover.showPopover(document.getElementById("popover"));
             };
 
+            var image2Clicked = document.getElementById("main-character");
+            
+            image2Clicked.onclick = function() {
+                document.getElementById("popover-image").src = image2Clicked.src;
+                popover.showPopover(document.getElementById("popover"));
+            };
+
             popover.onclick = function() {
-                popover.hidePopover(document.getElementById("popover"));
+                popover.hidePopover();
             };
         </script>
 
