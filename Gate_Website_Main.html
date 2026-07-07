@@ -25,7 +25,7 @@
         <section style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
         <button class="button button1" type="button" onclick="LeftArrow()"> < </button>
 
-        <img id="screenshots"src="images/placeholder-1.jpg" alt="Screenshot of the game" title="Screenshot 1" style="display: inline-block; width:70%; vertical-align: middle; border-radius: 10px;">
+        <img id="screenshots"src="images/screenshot-1.jpg" alt="Screenshot of the game" title="Screenshot 1" style="display: inline-block; width:70%; vertical-align: middle; border-radius: 10px;">
         
         <button class="button button2" type="button" onclick="RightArrow()"> > </button>
         </section>
@@ -41,8 +41,7 @@
         <img src="images/main-character.jpg" alt="Low poly gnome" title="Low poly gnome" 
         style="display: block; margin-left: auto; margin-right: auto; width:70%; border-radius: 10px;">
         <p>
-            The main character is a forest gnome, however a different model was used up until 30 minutes before the deadline. <br>
-            <a href="./spray_can.html" style="color:lightskyblue;"> Link to different page with dev model </a>
+            The main character is a forest gnome, however a <a href="./spray_can.html" style="color:lightskyblue;">different model</a> was used up until 30 minutes before the deadline. <br>
         </p>
 
         <h2> TECHNICAL DETAILS </h2>
@@ -52,12 +51,10 @@
 
 
         <br>
-        <section style="background-color: aqua; text-align:right; max-width: 680px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20px;">
-            <br>
-
+        <section style="background-color: aqua; text-align:right; max-width: 680px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20px; padding-top: 1px;">
             <p style="color:black; margin-right: 20px;"> The game was featured on the <em>Bjerkely Folkehøyskole</em> YouTube channel! <br>
-            <a href="https://www.youtube.com/watch?v=dzZGCK8nY5s" target="_blank"> (Link to YouTube since player is broken)</a>
-            </p> <br>
+            <a href="https://www.youtube.com/watch?v=dzZGCK8nY5s" target="_blank"> (Link to YouTube if player is broken)</a>
+            </p>
             <iframe width="640" height="360" title="Bjerkely Folkehøyskole Gate Gameplay Video" style="display: block; margin-left: auto; margin-right: auto;" referrerpolicy="strict-origin-when-cross-origin" 
             src="https://www.youtube.com/embed/dzZGCK8nY5s">
             </iframe>
@@ -94,7 +91,7 @@
 
             function UpdateImage() {
                 let imageElement = document.getElementById("screenshots");
-                imageElement.src = "images/placeholder-" + currentImage + ".jpg";
+                imageElement.src = "images/screenshot-" + currentImage + ".jpg";
                 imageElement.title = "Screenshot " + currentImage;
             }
         </script>
