@@ -21,12 +21,14 @@
         <img src="images/gate-logo.jpg" alt="Gate logo" title="Gate logo" style="display: block; margin-left: auto; margin-right: auto; width:192px; image-rendering: pixelated;">
         <!-- <h1>GATE</h1> -->
         </section>
-        
-        <br>
 
-        <img id="screenshots"src="images/placeholder-1.jpg" alt="Screenshot 1" title="Screenshot 1" style="display: block; margin-left: auto; margin-right: auto; width:70%">
-        <button type="button" onclick="LeftArrow()"> Left </button>
-        <button type="button" onclick="RightArrow()"> Right </button>
+        <section style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+        <button class="button button1" type="button" onclick="LeftArrow()"> < </button>
+
+        <img id="screenshots"src="images/placeholder-1.jpg" alt="Screenshot of the game" title="Screenshot 1" style="display: inline-block; width:70%; vertical-align: middle; border-radius: 10px;">
+        
+        <button class="button button2" type="button" onclick="RightArrow()"> > </button>
+        </section>
 
         <h2> GENERAL INFO </h2>
         <p>
@@ -37,7 +39,7 @@
         
         <h2> MAIN CHARACTER </h2>
         <img src="images/main-character.jpg" alt="Low poly gnome" title="Low poly gnome" 
-        style="display: block; margin-left: auto; margin-right: auto; width:70%">
+        style="display: block; margin-left: auto; margin-right: auto; width:70%; border-radius: 10px;">
         <p>
             The main character is a forest gnome, however a different model was used up until 30 minutes before the deadline. <br>
             <a href="./spray_can.html" style="color:lightskyblue;"> Link to different page with dev model </a>
@@ -93,6 +95,7 @@
             function UpdateImage() {
                 let imageElement = document.getElementById("screenshots");
                 imageElement.src = "images/placeholder-" + currentImage + ".jpg";
+                imageElement.title = "Screenshot " + currentImage;
             }
         </script>
 
